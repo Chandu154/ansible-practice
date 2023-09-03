@@ -1,12 +1,6 @@
-- name: Install nginx
+- name: pinging the server means checking the server wether is it alive or not
   hosts: mongodb
-  become: yes
-  tasks: 
-  - name: install nginx in node server
-    ansible.builtin.yum:
-      name: nginx
-      state: installed
-  - name: start the nginx
-    ansible.builtin.service:
-      name: nginx
-      state: started    
+  tasks:
+  - name: pinging the server
+    ansible.builtin.ping:
+     
