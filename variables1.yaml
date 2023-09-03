@@ -1,12 +1,11 @@
 - name: practice variables
   hosts: localhost
   variable:
-  NAME: chandu
-  COURSE: Devops with aws
+    NAME: chandu
+    COURSE: Devops with aws
   tasks:
   - name: task levell variables
     vars:
       DURATION: 200hours
-
     ansible.builtin.debug:
       msg: "my name is {{NAME}},I am learning {{COURSE}},Duration is {{DURATION}}"  
