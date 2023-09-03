@@ -1,6 +1,7 @@
 - name: practice variables
   hosts: localhost
-  variable:
+  become: yes
+  vars:
     NAME: chandu
     COURSE: Devops with aws
   tasks:
