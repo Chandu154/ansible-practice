@@ -7,6 +7,7 @@
   tasks:
   - name: task levell variables
     vars:
+      NAME: Devara Chandrasekhar
       DURATION: 200hours
     ansible.builtin.debug:
       msg: "my name is {{NAME}},I am learning {{COURSE}},Duration is {{DURATION}}"  
